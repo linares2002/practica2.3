@@ -29,7 +29,7 @@ services:
      - telemetry
 
   grafana:
-    image: grafana/grafana
+    image: grafana/grafana:8.0.2
     container_name: grafana
     restart: always
     ports:
