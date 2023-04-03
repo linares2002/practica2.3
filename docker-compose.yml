@@ -48,6 +48,16 @@ services:
     networks:
      - telemetry
 
+  broker:
+    image: docker pull hivemq/hivemq-ce
+    container_name: broker
+    restart: always
+    ports:
+     - 1883:1883 
+    networks:
+     - telemetry
+
+
 networks:
   telemetry:
     ipam:
